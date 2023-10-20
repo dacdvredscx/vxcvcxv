@@ -1,0 +1,205 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Manrope', sans-serif
+    scroll-behavior: smooth
+
+$main: #1E1E1E
+$color: #005A8B
+.container
+    max-width: 1585px
+    margin: 0 auto
+.color
+    color: $color
+h1
+    font-size: 50px
+    font-weight: 600
+h2
+    text-align: center
+    font-size: 50px
+
+//NAV
+header
+    position: fixed
+    width: 100%
+    background: #fff
+    z-index: 9999
+    
+    
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 26px 0 
+.nav-item
+    padding-right: 100px
+    text-decoration: none
+    color: #000
+    font-size: 28px
+    font-weight: 600
+    font-family: 'Open Sans', sans-serif
+    &:hover
+        color: #BFDBEC
+.nav-item:last-child
+    padding-right: 0
+///NAV
+
+//MAIN
+.main
+    background-color: #BFDBEC
+    .container
+        position: relative
+.main-div
+    padding: 350px 0 275px 0
+h1::after
+    content: " "
+    background: url(images/pc.png)
+    position: absolute
+    width: 889px
+    height: 690px
+    right: 0
+    bottom: 60px
+.main-button
+    background: #005A8B
+    border-radius: 5px
+    font-size: 30px
+    font-weight: 600
+    padding: 17px 60px
+    display: inline-block
+    text-decoration: none
+    color: #fff
+    margin-top: 20px
+    
+.main-button:hover
+    transition: .3s 
+    transform: scale(1.05)
+///MAIN
+
+//Introduction
+.introduction
+    padding: 90px 0 75px 0
+    color: #1E1E1E
+    
+.introduction-div
+    padding-top: 67px
+    display: grid
+    grid-template-columns: 2.2fr 1fr
+    gap: 80px
+    img
+        width: 100%
+.p-title
+    font-size: 44px
+    font-weight: 600
+.p-desc
+    font-size: 28px
+    font-weight: 600
+///Introduction 
+
+//useful
+.useful
+    color: #1E1E1E
+    background: url(images/bg.png)
+    padding: 75px 0 150px 0
+    h2
+        font-size: 44px
+        padding-bottom: 40px
+.h2-desc
+    font-size: 28px
+    font-weight: 600
+    color: #6D6E71
+    text-align: center
+.useful-div
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 140px
+    padding-top: 80px
+.use
+    border-radius: 22px
+    border: 7px solid #005A8B
+    padding: 50px 30px 100px 30px
+    text-align: center
+    background: #fff
+.ellipse
+    background: #BFDBEC
+    border-radius: 100px
+    display: inline-block
+    height: 146px
+    width: 146px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    margin-bottom: 15px
+.useful-title
+    font-size: 36px
+    font-weight: 600
+    padding-bottom: 16px
+.useful-desc
+    font-size: 28px
+    font-weight: 600
+    
+///useful    
+
+.test
+    color: #1E1E1E
+    height: 100vh 
+    background: #BFDBEC
+    padding: 70px 0 0 0
+
+//footer
+footer
+    padding: 90px 0 150px 0
+.footer-div
+    display: grid
+    grid-template-columns: 1fr 1fr
+.footer-title
+    font-size: 44px
+    font-weight: 600
+    padding-bottom: 35px
+.left,.right
+    padding-left: 60px
+.left
+    border-right: 1px solid #000
+    .contacts
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 60px
+        width: 360px
+        padding-bottom: 30px
+.right
+    .contacts
+        display: grid
+        
+        gap: 60px
+        width: 360px
+.contact
+    font-size: 28px
+    font-weight: 600
+
+    
+
+///footer
+@media (max-width: 1600px)
+    .container
+        padding: 0 20px
+    .introduction-div
+        grid-template-columns: 2fr 1fr
+        align-items: center
+    .p-desc
+        font-size: 24px
+    .h2-desc
+        font-size: 24px
+    .useful-desc
+        font-size: 24px
+    .useful-div
+        gap: 30px
+    h2
+        font-size: 40px
+    .p-title
+        br
+            display: none
+    .useful-title
+        font-size: 30px
+    .contact
+        font-size: 24px
